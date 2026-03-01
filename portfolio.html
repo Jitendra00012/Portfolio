@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - FolioOne Bootstrap Template</title>
+ 
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -27,10 +27,10 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
- 
+  
 </head>
 
-<body class="index-page">
+<body class="portfolio-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -42,20 +42,19 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-        
-
-          
+       
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+         
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
       <div class="header-social-links">
-        
+      
        <a href="https://www.facebook.com/profile.php?id=100059667504249" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/_jitendra_thakur_0001?igsh=MWF4Y3FoeWV6Nzdmdw==" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="https://www.linkedin.com/in/jitendra-singh-3940923a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="bi bi-linkedin"></i></a>
@@ -67,73 +66,87 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-   <section id="hero" class="hero section">
+    <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>Here are some of my recent web development and UI design projects.</p>
+  </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="row gy-4 align-items-center">
-      <div class="col-lg-6 order-2 order-lg-1">
-        <div class="hero-content">
-          
-          <h1 data-aos="fade-up" data-aos-delay="200">
-            Hello, I'm <span class="highlight">Jitendra Singh</span>
-          </h1>
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <h2 data-aos="fade-up" data-aos-delay="300">
-            I'm a 
-            <span class="typed" 
-              data-typed-items=".NET Developer, ASP.NET MVC Developer, Full Stack Developer, C# Developer">
-            </span>
-          </h2>
+      <!-- FILTERS -->
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-uiux">UI/UX Design</li>
+        <li data-filter=".filter-fullstack">Full Stack Development</li>
+      </ul>
 
-          <p data-aos="fade-up" data-aos-delay="400">
-            Motivated .NET Developer with hands-on experience in building scalable and secure web applications using C#, ASP.NET MVC, and SQL Server. Skilled in RESTful APIs, MVC architecture, and database management with strong problem-solving ability.
-          </p>
+      <!-- PROJECTS -->
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
-          <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
-            <a href="portfolio.html" class="btn btn-primary">View My Project</a>
-            <a href="contact.html" class="btn btn-outline">Hire Me</a>
-          </div>
-
-          <div class="social-links" data-aos="fade-up" data-aos-delay="600">
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-github"></i></a>
-            <a href="#"><i class="bi bi-envelope"></i></a>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-lg-6 order-1 order-lg-2">
-        <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
-          <div class="image-wrapper">
-            <img src="assets/img/profile/jitendraProfile.png" alt="Jitendra Singh" class="img-fluid">
-
-            <div class="floating-elements">
-              <div class="floating-card design" data-aos="fade-left" data-aos-delay="700">
-                <i class="bi bi-code-slash"></i>
-                <span>.NET</span>
-              </div>
-              <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
-                <i class="bi bi-database"></i>
-                <span>SQL Server</span>
-              </div>
-              <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
-                <i class="bi bi-layers"></i>
-                <span>MVC</span>
+        <!-- STUDENT MANAGEMENT SYSTEM -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img src="assets/img/portfolio/student-management.jpg" class="img-fluid" alt="Student Management System">
+              <div class="portfolio-overlay">
+                <a href="assets/img/portfolio/student-management.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                <a href="https://github.com/yourusername/student-management-system" target="_blank" class="portfolio-details-link"><i class="bi bi-link"></i></a>
               </div>
             </div>
-
+            <div class="portfolio-info">
+              <h4>Student Management System</h4>
+              <p>Full Stack Web Application</p>
+              <div class="portfolio-tags">
+                <span>C#</span>
+                <span>ASP.NET MVC</span>
+                <span>SQL Server</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
+        <!-- TANISHQ UI CLONE -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img src="assets/img/portfolio/tanishq-clone.jpg" class="img-fluid" alt="Tanishq UI Clone">
+              <div class="portfolio-overlay">
+                <a href="assets/img/portfolio/tanishq-clone.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                <a href="https://jitendra00012.github.io/tanishq/" target="_blank" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4>Tanishq Website UI Clone</h4>
+              <p>Responsive E-commerce UI Design</p>
+              <div class="portfolio-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+      <!-- END PROJECTS -->
+
+    </div>
+
+    <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+      <a href="#portfolio" class="btn btn-primary">View All Projects</a>
     </div>
 
   </div>
 
-</section><!-- /Hero Section -->
+</section>
 
   </main>
 
@@ -144,14 +157,13 @@
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Jitendra Singh</strong> <span>All Rights Reserved<br></span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        
         <a href="https://www.facebook.com/profile.php?id=100059667504249"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/_jitendra_thakur_0001?igsh=MWF4Y3FoeWV6Nzdmdw=="><i class="bi bi-instagram"></i></a>
         <a href="https://www.linkedin.com/in/jitendra-singh-3940923a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
         <a href="https://github.com/Jitendra00012"><i class="bi bi-github"></i></a>
       </div>
       <div class="credits">
-       
+        
         Designed by <a href="#">JT</a>
       </div>
     </div>
